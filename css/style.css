@@ -16,11 +16,11 @@ progress {
     background-size: auto;
 }
 
-h1, h2, h3, h4, h5, label, nav, a {
+h1, h2, h3, h4, h5, label, nav, a, button {
     font-family: 'Montserrat', sans-serif;
 }
 
-p, span {
+p, span, input, textarea {
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -335,21 +335,130 @@ header {
 
 .testimonials {
     background-color: #10c9c3;
-    height: 500px;
+    padding: 187px 0 180px;
+}
+.testimonials>div{
+    max-width: 678px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
 }
 
+.testimonials h4{
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.testimonials h5{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/*  brands */
 .brands {
     background-color: #ffffff;
-    height: 200px;
+}
+.brands>div{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 66px 0;
 }
 
-.contact {
+
+
+/*  contact */
+
+.contact-container{
     background-color: #f5f5f5;
-    height: 750px;
 }
 
-footer {
+.contact{
+    margin: auto;
+    max-width: 670px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact__text{
+    margin: auto;
+    max-width: 500px;
+}
+
+.contact__text h3{
+    color: #1d1d1d;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.contact__text p{
+    font-size: 16px;
+    color: #787878;
+    margin-bottom: 45px;
+}
+
+.contact input{
+    width: 48%;
+    height: 50px;
+}
+
+.contact input:first-of-type{
+    margin-right: 3%;
+}
+
+.contact input:last-of-type{
+    width: 100%;
+}
+
+.contact input, .contact textarea{
+    padding-left: 20px;
+    color: #787878;
+    font-size: 15px;
+    resize: none;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.contact textarea{
+    height: 170px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.contact button{
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #10c9c3;
+    padding: 23px 50px 22px 35px;
+}
+
+
+
+/*  footer */
+footer{
     background-color: #141414;
-    height: 285px;
+    padding: 100px 0;
 }
 
+footer>div{
+    justify-content: space-between;
+}
+
+footer p:first-of-type{
+    max-width: 230px;
+}
+
+footer h3{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+footer p, li{
+    color: #bcbcbc;
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 15px;
+
+}
